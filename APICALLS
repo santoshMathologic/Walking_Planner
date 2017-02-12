@@ -1,0 +1,16 @@
+API CALLS
+
+API CALLS
+
+localhost:6060/api/v1/company/getInfo?sort=companyName,asc&limit=10&page=1&walkingdate&city&state
+
+http://localhost:6060/api/v1/users/getUsers?sort=username&limit=10&page=1&username=santosh&firstname&lastName&email&role&password&isActive=true // with values
+
+
+http://localhost:6060/api/v1/users/getUsers?sort=username&limit=10&page=1&username&firstname&lastName&email&role&password&isActive=true // without values values
+
+http://localhost:8080/getAllRecords?sort=compnayName&limit=10&page=0&companyName=Ionidea Enterprise Solutions Private Limited &city=BANGALORE
+
+
+
+http://localhost:6060/api/v1/userPlan/getUserPlan?planName=Plan001&limit=10&page=0

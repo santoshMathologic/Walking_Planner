@@ -1,0 +1,225 @@
+{"content":  [{ 
+    "_id" : "576436d1d6e1681c0fddd693", 
+    "password" : "test", 
+    "userName" : "test", 
+    "email" : "santosh.citech@gmail.com", 
+    "createdTime" : "2016-06-17T17:43:45.765+0000", 
+    "markDelete" : false, 
+    "roleCode" : "Planner", 
+    
+    "firstName" : "test", 
+    "lastName" : "test", 
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : false, 
+    "city" : "banguluru"
+},
+{ 
+    "_id" : "571dbbf1d4367766261acf40", 
+    "userName" : "anurag", 
+    "firstName" : "Anurag", 
+    "lastName" : "Sharma", 
+    "password" : "1cd09mca3", 
+    "email" : "anurag@gmail.com", 
+    "createdTime" : "2016-04-25T06:40:49.851+0000", 
+    "roleCode" : "admin", 
+    
+    "markDelete" : true, 
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : true, 
+    "city" : "Bengauru"
+},
+{ 
+    "_id" : "5734550667348ea01467aa05", 
+    "userName" : "c1", 
+    "firstName" : "santosh", 
+    "lastName" : "sahu", 
+    "password" : "1cd09mca3", 
+    "email" : "c1@gmail.com", 
+    "createdTime" : "2016-05-12T10:03:50.248+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : true, 
+    "city" : "Bengauru"
+},
+{ 
+    "_id" : "5734551267348ea01467aa06", 
+    "userName" : "c2", 
+    "firstName" : "c2", 
+    "lastName" : "c2", 
+    "password" : "1cd09mca3", 
+    "email" : "c2@gmail.com", 
+    "createdTime" : "2016-05-12T10:04:02.270+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : true, 
+    "city" : "Bengauru"
+},
+{ 
+    "_id" : "5734551c67348ea01467aa07", 
+    "userName" : "c3", 
+    "firstName" : "c3", 
+    "lastName" : "c3", 
+    "password" : "1cd09mca4", 
+    "email" : "c3@gmail.com", 
+    "createdTime" : "2016-05-12T10:04:12.690+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : true, 
+    "city" : "Bengauru"
+},
+{ 
+    "_id" : "5734552567348ea01467aa08", 
+    "userName" : "c4", 
+    "firstName" : "c4", 
+    "lastName" : "c4", 
+    "password" : "1cd09mca5", 
+    "email" : "c4@gmail.com", 
+    "createdTime" : "2016-05-12T10:04:21.985+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : true, 
+    "city" : "Bengauru"
+},
+{ 
+    "_id" : "5734552e67348ea01467aa09", 
+    "userName" : "c5", 
+    "firstName" : "c5", 
+    "lastName" : "c5", 
+    "password" : "1cd09mca6", 
+    "email" : "c5@gmail.com", 
+    "createdTime" : "2016-05-12T10:04:30.899+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : true, 
+    "city" : "Kolkatta"
+},
+{ 
+    "_id" : "5734553c67348ea01467aa0a", 
+    "userName" : "c6", 
+    "firstName" : "c6", 
+    "lastName" : "c6", 
+    "password" : "1cd09mca7", 
+    "email" : "c6@gmail.com", 
+    "createdTime" : "2016-05-12T10:04:44.643+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : true, 
+    "city" : "Bengauru"
+},
+{ 
+    "_id" : "5734554567348ea01467aa0b", 
+    "userName" : "c7", 
+    "firstName" : "c7", 
+    "lastName" : "c7", 
+    "password" : "1cd09mca8", 
+    "email" : "c7@gmail.com", 
+    "createdTime" : "2016-05-12T10:04:53.312+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : false, 
+    "city" : "Bengauru"
+},
+{ 
+    "_id" : "5734554e67348ea01467aa0c", 
+    "userName" : "c8", 
+    "firstName" : "c8", 
+    "lastName" : "c8", 
+    "password" : "1cd09mca9", 
+    "email" : "c8@gmail.com", 
+    "createdTime" : "2016-05-12T10:05:02.413+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : false, 
+    "city" : "Bengauru"
+},
+{ 
+    "_id" : "5734555867348ea01467aa0d", 
+    "userName" : "c9", 
+    "firstName" : "c9", 
+    "lastName" : "c9", 
+    "password" : "1cd09mca10", 
+    "email" : "c9@gmail.com", 
+    "createdTime" : "2016-05-12T10:05:12.719+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : false, 
+    "city" : "Bengauru"
+},
+{ 
+    "_id" : "573471e567348ea01467aa0e", 
+    "userName" : "lucky", 
+    "firstName" : "laxman", 
+    "lastName" : "sharma", 
+    "password" : "1cd09mca11", 
+    "email" : "lux@gmail.com", 
+    "createdTime" : "2016-05-12T12:07:01.072+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : false, 
+    "city" : "dubai"
+},
+{ 
+    "_id" : "573472ee67348ea01467aa0f", 
+    "userName" : "vivek", 
+    "firstName" : "vivek", 
+    "lastName" : "yadav", 
+    "password" : "vivek", 
+    "email" : "vivek@gmail.com", 
+    "createdTime" : "2016-05-12T12:11:26.609+0000", 
+    "markDelete" : true, 
+    "roleCode" : "Planner", 
+    
+    "mobileNo" : 7406465159.0, 
+    "address" : "bangalore", 
+    "userActive" : false, 
+    "city" : "Bengauru"
+},
+{ 
+    "_id" : "5786d0d69ea848a021f02654", 
+    "password" : "test", 
+    "userName" : "test", 
+    "firstName" : "santosh", 
+    "lastName" : "sahu", 
+    "address" : "bangalore", 
+    "email" : "santosh.citech@gmail.com", 
+    "mobileNo" : 7406465159.0, 
+    "createdTime" : "2016-07-13T23:37:58.189+0000", 
+    "markDelete" : false, 
+    "roleCode" : "admin", 
+    "userActive" : false, 
+    
+    "city" : "Bengauru"
+}]
+}

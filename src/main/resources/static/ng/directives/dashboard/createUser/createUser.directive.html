@@ -1,0 +1,188 @@
+<div>
+
+	<create-user></create-user>
+
+
+
+
+	<div class="container">
+		<h2>Create User</h2>
+
+		<div class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading">User Creation</div>
+				<div class="panel-body">
+
+					<div class="col-lg-12" id="userFormDiv" ng-submit="saveNewUser(userdetails)">
+						<form name="userForm" novalidate>
+							<div class="col-lg-6">
+								
+								<div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
+									<label class="control-label">User Name </label> <input
+										type="text" name="username" ng-model="userdetails.username"
+										class="form-control" placeholder="Enter User Name"
+										required="true">
+									 <p ng-show="userForm.username.$invalid && !userForm.username.$pristine" class="help-block">User name is required.</p>
+							
+								</div>
+								
+								<div class="form-group" ng-class="{ 'has-error' : userForm.firstname.$invalid && !userForm.firstname.$pristine }">
+
+									<label class="control-label">First Name </label> <input
+										type="text" name="firstname" ng-required="true" ng-model="userdetails.firstName"
+										class="form-control" placeholder="Enter First Name" 
+										ng-minlength="3" ng-maxlength="8"> 
+									
+									<p ng-show="userForm.firstname.$error.minlength" class="help-block">FirstName is too short.</p>
+            						<p ng-show="userForm.firstname.$error.maxlength" class="help-block">FirstName is too long.</p>
+             						<p ng-show="userForm.firstname.$invalid && !userForm.firstname.$pristine" class="help-block">first name is required.</p>
+
+
+
+
+								</div>
+								
+								<div class="form-group" ng-class="{ 'has-error' : userForm.lastname.$invalid && !userForm.lastname.$pristine }">
+
+									<label class="control-label">Last Name </label> <input
+										type="text" name="lastname" ng-required="true" ng-model="userdetails.lastName"
+										class="form-control" placeholder="Enter Last Name"  
+										>
+										 <p ng-show="userForm.lastname.$invalid && !userForm.lastname.$pristine" class="help-block">Last name is required.</p>
+
+
+
+
+
+								</div>
+								
+								<div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+
+									<label class="control-label">Email :</label> <input
+										type="email" name="email" ng-required="true" ng-model="userdetails.email"
+										class="form-control" placeholder="sample@example.com" ng-model-options="{ updateOn: blur }" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/"
+										> 
+										 <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+
+
+
+								</div>
+
+								<div class="form-group" ng-class="{ 'has-error' : userForm.mobileNo.$invalid && !userForm.mobileNo.$pristine }">
+
+									<label class="control-label">MobileNo</label> <input
+										type="text" name="mobileNo" ng-required="true"
+										ng-model="userdetails.mobileNo" class="form-control"
+										placeholder="Enter Mobile Number" ng-minlength="10"
+										ng-maxlength="10"> <span class="help-block"
+										ng-show="userForm.mobileNo.$error.required || 
+                           userForm.mobileNo.$error.number">
+										Valid phone number is required </span> <span class="help-block"
+										ng-show="((userForm.mobileNo.$error.minlength ||
+                           userForm.mobileNo.$error.maxlength) && 
+                           userForm.mobileNo.$dirty) ">
+										phone number should be 10 digits </span>
+
+
+
+								</div>
+
+								<div class="form-group">
+
+									<label class="control-label">Password</label> <input
+										type="text" name="password" ng-required="true" ng-model="userdetails.password"
+										class="form-control" placeholder="Enter Password"
+										> 
+								</div>	
+								
+								<div class="form-group" ng-class="{ 'has-error' : userForm.repassword.$error.nxEqualEx }">
+
+									<label class="control-label">ReTypePassword</label> <input
+										type="password" name="repassword" ng-required="true" 
+										class="form-control" placeholder="Enter Re Type Password" nx-equal-ex="userdetails.password" ng-model="userdetails.repassword">
+										
+										<span ng-show="userForm.repassword.$error.nxEqualEx">Both the Password Must be equal!</span> 
+														
+								</div>
+								
+								</div>
+								
+									<div class="col-lg-6">
+								<div class="form-group">
+									<label>Role </label> <select class="form-control"
+										ng-model="userdetails.role" ng-required="true"
+										name="role" ng-options="role.name for role in roles">
+										<option value="" selected>--Select Role--</option>
+
+									</select> <span style="color: red"
+										ng-show="(submitClass=='ng-submitted') || (submitClass!='hide-errors' && userForm.role.$dirty && userForm.role.$invalid)">
+
+										<span ng-show="userForm.role.$error.required">User Role
+											is required.</span>
+									</span>
+
+								</div>
+
+								<div class="form-group">
+									<label class="control-label">Account Status</label>
+									<toggle-switch ng-model="userdetails.isActive"
+										on-label="Active" off-label="NotActive"> </toggle-switch>
+									<!-- <div class="checkbox">
+						<label> <input type="checkbox" value="false"
+							ng-model="userdetails.isActive">{{ userdetails.isActive ?
+							'User Is Active':'User Is Not Active' }}
+						</label>
+					</div> -->
+								</div>
+
+
+								<div class="form-group">
+
+									<label class="control-label">Extension</label> <input
+										type="text" name="extension" ng-required="true" ng-model="userdetails.extension"
+										class="form-control" placeholder="Enter Password"
+										ng-model="false"> <span style="color: red"
+										ng-show="false" ng-cloak> <span
+										ng-show="false">Password is required.</span>
+									</span>
+								</div>
+								
+								<div class="form-group">
+
+									<label class="control-label">Employee No</label> <input
+										type="text" name="employeeNo" ng-required="true" ng-model="userdetails.employeeNo"
+										class="form-control" placeholder="Enter Password"
+										ng-model="false"> <span style="color: red"
+										ng-show="false" ng-cloak> <span
+										ng-show="false">Employee Number is required.</span>
+									</span>
+								</div>
+													
+									
+									</div>
+									
+								
+								<div class="col-lg-12">
+				<button type="submit" class="btn btn-primary btn-sm" ng-click="submitClass='ng-submitted'">
+					{{(Update)?'Update':'Create'}} User
+
+				</button>
+				<input type="button" class="btn btn-danger btn-sm"
+					ng-click="userForm.$valid;reset(1);clearInput('ddlHeadStation');" value="Reset" />
+					
+			</div>
+								
+							
+							
+					
+							
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>

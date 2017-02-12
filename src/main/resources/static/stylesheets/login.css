@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+
+
+input[type=text]{
+	border-radius: 0px; 
+	
+}
+
+input[type=password]{
+	border-radius: 0px; 
+	
+}
+
+.btn-success:hover {
+    background-color: #196c4a;
+}
