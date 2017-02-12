@@ -32,9 +32,10 @@ public class UserPlanController {
 	        return "You can upload a file by posting to this same URL.";
 	    }
 	
-	 @RequestMapping(value="/saveUserPlan", method= RequestMethod.GET)
-	   public @ResponseBody String saveUserPlan(@RequestBody UserPlan userPlan ) {
-	      		
+	 @RequestMapping(value="/saveUserPlan", method= RequestMethod.POST)
+	   public @ResponseBody String saveUserPlan(@RequestBody UserPlan userPlan) {
+		 
+		 	
 		       if(userPlan != null){
 		    	   		userPlanRepository.save(userPlan);
 		       }

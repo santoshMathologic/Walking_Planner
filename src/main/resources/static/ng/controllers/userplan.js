@@ -88,6 +88,16 @@ angular.module('walkinApp')
 			if (userPlan.name){
 				if (type == "create"){
 					
+					var user = {};
+						
+						$http.get("/api/v1/userdetails/getCurrentUser").then(function successResponse(response){
+							user = response.data;
+							  
+							
+						},function errorResponse(response){
+							
+						})
+					
 					
 					toaster
 					.pop({
